@@ -1,0 +1,17 @@
+:root {
+    &:has([data-color-scheme="system"]) {
+        color-scheme: light dark;
+    }
+}
+
+:root{
+    &:has([data-color-scheme="dark"]) {
+        color-scheme: dark;
+    }
+}
+
+:root {
+    &:has([data-color-scheme="light"]) {
+        color-scheme: light;
+    }
+}

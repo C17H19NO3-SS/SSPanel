@@ -1,0 +1,294 @@
+01.04.2024 23:28:56  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:28:58  /api/filelist  GET  {}  {"dir":"."}  127.0.0.1
+01.04.2024 23:29:04  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:29:08  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:31:12  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:31:15  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:33:55  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:34:00  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:34:01  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:35:22  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:35:26  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:35:27  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:39:15  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:39:18  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:39:19  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:39:58  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:40:03  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:40:04  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:40:56  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:41:00  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:41:01  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:41:53  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:41:55  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:41:56  /api/filelist  GET  {}  {"dir":"a"}  127.0.0.1
+01.04.2024 23:41:59  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:43:41  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:43:43  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:47:21  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:47:23  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:52:14  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:52:15  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:52:32  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:52:33  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:52:47  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:52:51  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:52:52  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:53:05  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:53:06  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:54:41  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:54:42  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:55:02  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:55:04  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:55:32  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:56:16  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:56:18  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:56:20  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:57:39  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:58:04  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:58:05  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:58:41  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:58:42  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+01.04.2024 23:59:02  /login  POST  {"password":"{login:'success',}"}  {}  
+01.04.2024 23:59:03  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 00:18:44  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 00:18:45  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 00:18:53  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 00:19:20  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 00:19:21  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:24:21  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:24:22  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:24:40  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:24:41  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:25:43  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:25:44  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:26:05  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:26:06  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 01:26:06  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 01:26:20  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:26:21  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:26:48  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:26:48  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:27:12  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 01:27:12  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 01:27:23  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 01:27:23  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 01:27:36  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:27:39  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:28:22  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:28:23  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:28:49  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:29:12  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:29:14  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:30:18  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:30:19  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:31:10  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:31:11  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:31:54  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:31:54  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:32:16  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:32:16  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:32:47  /api/filelist  GET  {}  {"dir":"../../"}  127.0.0.1
+02.04.2024 01:32:55  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:33:05  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:33:49  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:33:50  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:33:54  /api/filelist  GET  {}  {"dir":"test/"}  127.0.0.1
+02.04.2024 01:33:57  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:33:59  /workspace/yz/files/test/test.txt  GET  {}  {}  127.0.0.1
+02.04.2024 01:34:03  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:34:15  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 01:35:57  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:35:57  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 01:36:02  /api/filelist  GET  {}  {"dir":"test"}  127.0.0.1
+02.04.2024 01:36:05  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:36:38  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:36:39  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:37:24  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:37:25  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:39:49  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:39:50  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:41:39  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:41:40  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:44:14  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:44:15  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:52:02  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:52:03  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:53:42  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 01:53:46  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:54:10  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:54:12  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:54:53  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 01:54:55  /api/filelist  GET  {}  {"dir":".."}  127.0.0.1
+02.04.2024 01:55:02  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+02.04.2024 01:55:05  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 18:18:30  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:18:30  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:18:34  /favicon.ico  GET  {}  {}  127.0.0.1
+02.04.2024 18:18:44  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 18:18:47  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 18:21:35  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:21:35  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:21:42  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:21:42  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:21:45  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:21:45  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:22:01  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 18:22:03  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:22:03  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:22:03  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:22:08  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+02.04.2024 18:23:07  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:08  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:23  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:23  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:32  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:32  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:53  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:53  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:53  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:23:53  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:24:03  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 18:24:09  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:24:09  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:29  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:29  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:32  /api/filelist  POST  {"dir":"."}  {}  
+02.04.2024 18:26:37  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:54  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:54  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:26:57  /api/filelist  POST  {"dir":"."}  {}  
+02.04.2024 18:27:25  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:25  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:25  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:25  /login.ejs  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:39  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 18:27:45  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:46  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:27:49  /api/filelist  POST  {"dir":"."}  {}  
+02.04.2024 18:28:12  /login  POST  {"password":"{login:'success',}"}  {}  
+02.04.2024 18:28:13  /  GET  {}  {}  127.0.0.1
+02.04.2024 18:28:13  /static/style.css  GET  {}  {}  127.0.0.1
+02.04.2024 18:28:16  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:01:57  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 13:01:58  /favicon.ico  GET  {}  {}  127.0.0.1
+03.04.2024 13:01:58  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 13:02:12  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 13:02:14  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:02:14  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:02:17  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 13:02:17  /favicon.ico  GET  {}  {}  127.0.0.1
+03.04.2024 13:12:58  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:13:05  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:13:05  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:13:08  /api/filelist  GET  {}  {}  127.0.0.1
+03.04.2024 13:14:02  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:14:02  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:14:06  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:15:11  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:12  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:12  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:12  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:25  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 13:15:34  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:34  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:15:38  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:24:22  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:22  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:22  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:23  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:36  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 13:24:40  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:41  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:24:44  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:25:12  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:25:12  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:25:15  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:26:34  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:26:34  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:26:38  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:27:30  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:27:30  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:27:33  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:27:50  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:27:51  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:27:54  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:28:45  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:28:45  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:28:49  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:29:27  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:29:27  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:29:30  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:29:49  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:29:50  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:29:52  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 13:30:54  /  GET  {}  {}  127.0.0.1
+03.04.2024 13:30:54  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 13:30:58  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 14:19:15  /  GET  {}  {}  127.0.0.1
+03.04.2024 14:19:15  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 14:19:34  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 14:19:37  /  GET  {}  {}  127.0.0.1
+03.04.2024 14:19:37  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 14:20:19  /  GET  {}  {}  127.0.0.1
+03.04.2024 14:20:19  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 14:20:22  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 22:09:57  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:09:59  /api/filelist  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:10:05  /api/files  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:10:12  /api/file  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:11:51  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:11:52  /api/file  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:12:08  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:12:09  /api/file  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:12:24  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:12:25  /api/file  GET  {}  {"dir":""}  127.0.0.1
+03.04.2024 22:12:26  /favicon.ico  GET  {}  {}  127.0.0.1
+03.04.2024 22:12:30  /api/file  GET  {}  {"dir":"."}  127.0.0.1
+03.04.2024 22:12:39  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:14:04  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:14:05  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:14:40  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:14:41  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:15:37  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:17:30  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:17:44  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:17:46  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:18:17  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:18:21  /login  POST  {"password":"{login:'success',}"}  {}  
+03.04.2024 22:18:22  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:18:31  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:18:32  /login.ejs  GET  {}  {}  127.0.0.1
+03.04.2024 22:18:47  /static/style.css  GET  {}  {}  127.0.0.1
+03.04.2024 22:18:51  /api/filelist  POST  {"dir":"."}  {}  
+03.04.2024 22:18:52  /  GET  {}  {}  127.0.0.1
+03.04.2024 22:20:18  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:20:21  /api/filelist  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:20:29  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:20:34  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:20:36  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:20:37  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:21:42  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:21:43  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:44  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:45  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:45  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:46  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:46  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:47  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:49  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:21:51  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:52  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:21:53  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:21:54  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:24:35  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:24:37  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:24:39  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:27:34  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:27:36  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:27:37  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:27:39  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:27:40  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:27:41  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1
+03.04.2024 22:27:43  /login  GET  {}  {}  127.0.0.1
+03.04.2024 22:27:44  /api/file  GET  {}  {"dir":"test.txt"}  127.0.0.1

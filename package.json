@@ -1,0 +1,22 @@
+{
+	"name": "sspanel",
+	"module": "index.js",
+	"type": "module",
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"child_process": "^1.0.2",
+		"cookie-parser": "^1.4.6",
+		"crypto": "^1.0.1",
+		"ejs": "^3.1.9",
+		"express": "^4.19.2",
+		"fs-extra": "^11.2.0",
+		"md5": "^2.3.0",
+		"socket.io": "^4.7.5"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
