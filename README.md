@@ -29,4 +29,4 @@ This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) i
 
 ### This project does not support nodejs because require and import are used in the same file.
 
-# SSPanel is an api project, front-end writing is left to the preference of the person,~~you can find a sample front-end design on our github page~~.
+### SSPanel is an api project, front-end writing is left to the preference of the person,~~you can find a sample front-end design on our github page~~.
