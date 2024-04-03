@@ -28,3 +28,5 @@ bun run index.js
 This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
 ### This project does not support nodejs because require and import are used in the same file.
+
+# SSPanel bir api projesidir ön yüz yazımı kişinin tercihine bırakılmıştır ~~örnek bir ön yüz tasarımını github sayfamızda bulabilirsiniz~~.
