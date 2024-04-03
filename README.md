@@ -8,8 +8,15 @@ curl -fSsl https://bun.sh/install | bash
 
 To install dependencies:
 
+For linux or macos:
 ```bash
 bun install
+```
+
+For windows:
+
+```bat
+powershell -c "irm bun.sh/install.ps1 | iex"
 ```
 
 To run:
