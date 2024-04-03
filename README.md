@@ -1,4 +1,4 @@
-# sspanel
+# SSPanel
 
 To install bun:
 
