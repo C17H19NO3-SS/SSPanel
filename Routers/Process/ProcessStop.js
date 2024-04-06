@@ -6,9 +6,9 @@ import SuccessResponser from "../../Classes/Success";
 
 export default Router().get("/stopprocess", (req, res, next) => {
 	try {
-		if (!Utils.checkParameters("get", req, "pid"))
+		if (!Utils.checkParameters("post", req, "pid"))
 			return new ErrorResponser(res).send("Invalid Process ID.");
-		ProcessManager.Kill(req.query.pid);
+		ProcessManager.Kill(req.body.pid);
 		return new SuccessResponser(res).send("Process Stopped.");
 	} catch (err) {
 		console.error(err);
