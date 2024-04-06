@@ -32,4 +32,3 @@ This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) i
 
 - FileManagement added.
 - ProcessManagement added.
-- ~~DatabaseManagement added.~~
