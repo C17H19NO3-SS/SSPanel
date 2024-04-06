@@ -6,10 +6,10 @@ import ProcessManager from "../../Classes/ProcessManager";
 
 export default Router().get("/restartprocess", (req, res, next) => {
 	try {
-		if (!Utils.checkParameters("get", req, "pid"))
+		if (!Utils.checkParameters("post", req, "pid"))
 			return new ErrorResponser(res).send("Invalid Process ID.");
 		return new SuccessResponser(res).send(
-			ProcessManager.Restart(req.query.pid).pid,
+			ProcessManager.Restart(req.body.pid).pid,
 		);
 	} catch (err) {
 		console.error(err);
