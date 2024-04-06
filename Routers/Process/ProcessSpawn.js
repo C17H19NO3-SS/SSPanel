@@ -6,9 +6,9 @@ import SuccessResponser from "../../Classes/Success";
 
 export default Router().get("/processspawn", (req, res, next) => {
 	try {
-		if (!Utils.checkParameters("get", req, "command"))
+		if (!Utils.checkParameters("post", req, "command"))
 			return new ErrorResponser(res).send("Invalid parameters.");
-		new SuccessResponser(res).send(ProcessManager.Spawn(req.query.command).pid);
+		new SuccessResponser(res).send(ProcessManager.Spawn(req.body.command).pid);
 	} catch (err) {
 		console.error(err);
 		return new ErrorResponser(res).send("An error occurred try again later.");
