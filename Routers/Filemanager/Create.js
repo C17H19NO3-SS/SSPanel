@@ -7,9 +7,9 @@ import { DEFAULT_FILEMANAGER_DIR } from "../../consts";
 
 export default Router().post("/create", (req, res, next) => {
 	if (!Utils.checkParameters("post", req, "dir", "type"))
-		return new ErrorResponser(res).send("Invalid path.");
+		return new ErrorResponser(res).send(req.i18n.t("parameters.invalid"));
 	if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`))
-		return new ErrorResponser(res).send("File already exists.");
+		return new ErrorResponser(res).send(req.i18n.t("file.alreadyExist"));
 	if (
 		FileManager.Create(
 			FileManager.Normalize(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`),
@@ -17,5 +17,5 @@ export default Router().post("/create", (req, res, next) => {
 		) === true
 	) {
 		new SuccessResponser(res).send(true);
-	} else new ErrorResponser(res).send("An error occurred try again later.");
+	} else new ErrorResponser(res).send(req.i18n.t("catch.error"));
 });

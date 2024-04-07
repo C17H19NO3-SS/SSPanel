@@ -41,4 +41,6 @@ export const DEFAULT_THEME_NAME = "DefaultDark";
 
 export const DEFAULT_RENDER_ENGINE = "ejs";
 
+export const DEFAULT_LANGUAGE = "en";
+
 export const TOKEN = crypto.randomBytes(64).toString("hex");

@@ -7,6 +7,7 @@ import { Server } from "socket.io";
 import {
 	DEFAULT_ERROR_LOG_FILE,
 	DEFAULT_HOST,
+	DEFAULT_LANGUAGE,
 	DEFAULT_LOG_FILE,
 	DEFAULT_LOOPS_DIR,
 	DEFAULT_PORT,
@@ -27,6 +28,7 @@ import chalk from "chalk";
 import ExtensionManager from "./Classes/ExtensionManager.js";
 import Themes from "./Routers/Theme/Themes.js";
 import variables from "./variables.js";
+import { I18n } from "i18n-js";
 
 const app = express();
 const server = http.createServer(app);
@@ -40,6 +42,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use((req, res, next) => {
+	req.i18n = new I18n(require("./translation.json"), {
+		defaultLocale: DEFAULT_LANGUAGE,
+	});
+	req.setLanguage = (lang) => {
+		req.i18n.locale = lang;
+	};
+	req.setLanguage(DEFAULT_LANGUAGE);
 	req.isAuthenticated = req.cookies?.token === TOKEN;
 	req.Processes = Processes;
 	req.ProcessManager = ProcessManager;

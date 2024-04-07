@@ -7,11 +7,11 @@ import Utils from "../../Utils/Utils";
 
 export default Router().post("/rename", (req, res, next) => {
 	if (!Utils.checkParameters("post", req, "dir", "name"))
-		return new ErrorResponser(res).send("Invalid parameters.");
+		return new ErrorResponser(res).send(req.i18n.t("parameters.invalid"));
 	if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`))
-		return new ErrorResponser(res).send("File not found.");
+		return new ErrorResponser(res).send(req.i18n.t("file.notFound"));
 	else if (FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.name}`))
-		return new ErrorResponser(res).send("File already exists.");
+		return new ErrorResponser(res).send(req.i18n.t("file.alreadyExist"));
 	if (
 		FileManager.Rename(
 			`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`,
@@ -19,5 +19,5 @@ export default Router().post("/rename", (req, res, next) => {
 		)
 	) {
 		new SuccessResponser(res).send(true);
-	} else new ErrorResponser(res).send("An error occurred try again later.");
+	} else new ErrorResponser(res).send(req.i18n.t("catch.error"));
 });

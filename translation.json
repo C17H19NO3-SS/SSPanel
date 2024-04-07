@@ -1,0 +1,78 @@
+{
+	"en": {
+		"catch": {
+			"error": "An error occurred. Please try again later."
+		},
+		"process": {
+			"notFound": "Process not found.",
+			"stoped": "Process stopped.",
+			"pid": {
+				"invalid": "Invalid PID."
+			}
+		},
+		"parameters": {
+			"invalid": "Invalid parameters."
+		},
+		"file": {
+			"notFound": "File not found.",
+			"alreadyExist": "File already exists.",
+			"write": {
+				"fail": "Failed to write file."
+			},
+			"copy": {
+				"fail": "Failed to copy file."
+			},
+			"move": {
+				"fail": "Failed to move file."
+			},
+			"directory": {
+				"notFound": "Directory not found.",
+				"alreadyExist": "Directory already exists."
+			},
+			"path": {
+				"invalid": "Invalid path."
+			}
+		},
+		"permissions": {
+			"denied": "Access denied."
+		}
+	},
+	"tr": {
+		"catch": {
+			"error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+		},
+		"process": {
+			"notFound": "İşlem bulunamadı.",
+			"stoped": "İşlem durduruldu.",
+			"pid": {
+				"invalid": "Geçersiz PID."
+			}
+		},
+		"parameters": {
+			"invalid": "Geçersiz parametreler."
+		},
+		"file": {
+			"notFound": "Dosya bulunamadı.",
+			"alreadyExist": "Dosya zaten mevcut.",
+			"write": {
+				"fail": "Dosyaya yazma başarısız."
+			},
+			"copy": {
+				"fail": "Dosya kopyalama başarısız."
+			},
+			"move": {
+				"fail": "Dosya taşıma başarısız."
+			},
+			"directory": {
+				"notFound": "Dizin bulunamadı.",
+				"alreadyExist": "Dizin zaten mevcut."
+			},
+			"path": {
+				"invalid": "Geçersiz yol."
+			}
+		},
+		"permissions": {
+			"denied": "Erişim reddedildi."
+		}
+	}
+}

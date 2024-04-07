@@ -20,7 +20,10 @@ export default Router().use(
 	Router()
 		.use("/*", (req, res, next) => {
 			if (!req?.isAuthenticated)
-				return new ErrorResponser(res).send("Yetki Reddedildi.", 403);
+				return new ErrorResponser(res).send(
+					req.i18n.t("permissions.denied"),
+					403,
+				);
 			else next();
 		})
 		// FileManagement

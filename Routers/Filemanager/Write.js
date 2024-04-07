@@ -8,7 +8,7 @@ import FileManager from "../../Classes/FileManager";
 export default Router().post("/write", (req, res, next) => {
 	try {
 		if (!Utils.checkParameters("post", req, "dir", "content"))
-			return new ErrorResponser(res).send("Invalid parameters.");
+			return new ErrorResponser(res).send(req.i18n.t("parameters.invalid"));
 		if (
 			FileManager.Write(
 				FileManager.Normalize(`${DEFAULT_FILEMANAGER_DIR}/${req.body?.dir}`),
@@ -16,9 +16,9 @@ export default Router().post("/write", (req, res, next) => {
 			) === true
 		)
 			new SuccessResponser(res).send(true);
-		else new ErrorResponser(res).send(`Failed to write file.`);
+		else new ErrorResponser(res).send(req.i18n.t("file.write.fail"));
 	} catch (err) {
 		console.error(err);
-		new ErrorResponser(res).send("An error occurred try again later.");
+		new ErrorResponser(res).send(req.i18n.t("catch.error"));
 	}
 });
