@@ -1,6 +1,8 @@
 import fs from "fs";
+import fsex from "fs-extra";
 import processor from "child_process";
 import { getFileCreatedAt } from "../const-funcs";
+import { DEFAULT_OVERWRITE } from "../consts";
 
 export default class FileManager {
 	static GetFiles(path = "") {
@@ -27,12 +29,85 @@ export default class FileManager {
 		});
 	}
 
-	static Read(path) {
+	static Read(path = "") {
 		return fs.readFileSync(FileManager.Normalize(path), "utf8");
 	}
 
 	static Write(path, data) {
-		fs.writeFileSync(FileManager.Normalize(path), data);
+		try {
+			fs.writeFileSync(FileManager.Normalize(path), data);
+			return true;
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
+	}
+
+	static Delete(path, type = "file") {
+		try {
+			if (type === "file") fs.unlinkSync(FileManager.Normalize(path));
+			else if (type === "folder")
+				fs.rmdirSync(FileManager.Normalize(path), { recursive: true });
+			else return false;
+			return true;
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
+	}
+
+	static Create(path, type = "file") {
+		try {
+			if (type === "file") fs.writeFileSync(FileManager.Normalize(path), "");
+			else if (type === "folder")
+				fs.mkdirSync(FileManager.Normalize(path), { recursive: true });
+			else return false;
+			return true;
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
+	}
+
+	static Rename(path = "", newPath = "") {
+		try {
+			fs.cpSync(FileManager.Normalize(path), FileManager.Normalize(newPath), {
+				force: true,
+				recursive: true,
+				errorOnExist: true,
+			});
+			return true;
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
+	}
+
+	static Move(sourcePath, destinationPath) {
+		try {
+			fsex.moveSync(
+				FileManager.Normalize(sourcePath),
+				FileManager.Normalize(
+					`${destinationPath}/${sourcePath.split("/").pop()}`,
+				),
+				{
+					overwrite: DEFAULT_OVERWRITE,
+				},
+			);
+			return true;
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
+	}
+
+	static Exist(path = "") {
+		try {
+			return fs.existsSync(FileManager.Normalize(path));
+		} catch (err) {
+			console.error(err);
+			return false;
+		}
 	}
 
 	static Normalize(path = "") {

@@ -25,10 +25,14 @@ export const DEFAULT_OVERWRITE = true;
 
 export const DEFAULT_PASSWORD = "{login:'success',}";
 
+export const DEFAULT_PROCESS_LOG_DIR = "Logs";
+
 export const DEFAULT_PROCESS_USER = 1000;
 
 export const DEFAULT_PROCESS_LOG_DELETE_TIMEOUT = 1000 * 60 * 60 * 24 * 3; // 3 day
 
-export const DEFAULT_PROCESS_SCRIPT_DELETE_TIMEOUT = 1000 * 60 * 60; // 1 hour
+export const DEFAULT_EXTENSIONS_DIR = "Extensions";
+
+export const DEFAULT_EXTENSIONS_ROUTING_PATH = "/ext";
 
 export const TOKEN = crypto.randomBytes(64).toString("hex");

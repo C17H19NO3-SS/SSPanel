@@ -5,7 +5,7 @@ export default class ErrorResponser {
 		this.response = response;
 	}
 
-	send(error = "", statusCode = 200) {
+	send(error = "", statusCode = 500) {
 		this.response.status(statusCode).json({
 			success: false,
 			error,

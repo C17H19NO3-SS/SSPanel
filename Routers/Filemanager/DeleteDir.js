@@ -5,20 +5,20 @@ import SuccessResponser from "../../Classes/Success";
 import Utils from "../../Utils/Utils";
 import { DEFAULT_FILEMANAGER_DIR } from "../../consts";
 
-export default Router().get("/deletedir", (req, res, next) => {
+export default Router().post("/deletedir", (req, res, next) => {
 	try {
-		if (!Utils.checkParameters("get", req, "dir"))
+		if (!Utils.checkParameters("post", req, "dir"))
 			return new ErrorResponser(res).send("Invalid parameters.");
-		if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.query.dir}`))
+		if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`))
 			return new ErrorResponser(res).send("Directory not found.");
 		new SuccessResponser(res).send(
 			FileManager.Delete(
-				FileManager.Normalize(`${DEFAULT_FILEMANAGER_DIR}/${req.query.dir}`),
+				FileManager.Normalize(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`),
 				"folder",
 			),
 		);
 	} catch (err) {
 		console.error(err);
-		new ErrorResponser(res).send("Geçersiz dizin.");
+		new ErrorResponser(res).send("An error occurred try again later.");
 	}
 });

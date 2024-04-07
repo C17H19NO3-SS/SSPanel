@@ -5,19 +5,19 @@ import SuccessResponser from "../../Classes/Success";
 import { DEFAULT_FILEMANAGER_DIR } from "../../consts";
 import Utils from "../../Utils/Utils";
 
-export default Router().get("/rename", (req, res, next) => {
-	if (!Utils.checkParameters("get", req, "dir", "name"))
+export default Router().post("/rename", (req, res, next) => {
+	if (!Utils.checkParameters("post", req, "dir", "name"))
 		return new ErrorResponser(res).send("Invalid parameters.");
-	if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.query.dir}`))
+	if (!FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`))
 		return new ErrorResponser(res).send("File not found.");
-	else if (FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.query.name}`))
+	else if (FileManager.Exist(`${DEFAULT_FILEMANAGER_DIR}/${req.body.name}`))
 		return new ErrorResponser(res).send("File already exists.");
 	if (
 		FileManager.Rename(
-			`${DEFAULT_FILEMANAGER_DIR}/${req.query.dir}`,
-			`${DEFAULT_FILEMANAGER_DIR}/${req.query.name}`,
+			`${DEFAULT_FILEMANAGER_DIR}/${req.body.dir}`,
+			`${DEFAULT_FILEMANAGER_DIR}/${req.body.name}`,
 		)
 	) {
 		new SuccessResponser(res).send(true);
-	} else new ErrorResponser(res).send("Failed to rename file.");
+	} else new ErrorResponser(res).send("An error occurred try again later.");
 });

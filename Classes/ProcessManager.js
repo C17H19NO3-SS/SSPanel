@@ -2,20 +2,21 @@ import cp from "child_process";
 import fs from "fs";
 import {
 	DEFAULT_PROCESS_LOG_DELETE_TIMEOUT,
-	DEFAULT_PROCESS_SCRIPT_DELETE_TIMEOUT,
 	DEFAULT_PROCESS_USER,
 	PROJECT_DIRECTORY,
 } from "../consts";
 
-const Processes = {};
+export const Processes = {};
 
 export default class ProcessManager {
 	static Spawn(command = "") {
 		const id = Math.floor(Math.random() * 10000 * Math.random());
-		fs.writeFileSync(`Scripts/scr-${id}.sh`, command);
-		const proc = cp.spawn("bash", [`Scripts/scr-${id}.sh`], {
+		var cmd = command.split(" ");
+		const proc = cp.spawn(cmd.shift(), cmd, {
 			stdio: ["pipe", "pipe", "pipe"],
 			uid: DEFAULT_PROCESS_USER,
+			gid: DEFAULT_PROCESS_USER,
+			shell: "/bin/bash",
 		});
 
 		proc.stdout.on("data", (data) => {
@@ -51,9 +52,6 @@ export default class ProcessManager {
 		proc.on("exit", () => {
 			delete Processes[proc.pid];
 			setTimeout(() => {
-				fs.rmSync(`Scripts/scr-${id}.sh`);
-			}, DEFAULT_PROCESS_SCRIPT_DELETE_TIMEOUT);
-			setTimeout(() => {
 				fs.rmSync(`${PROJECT_DIRECTORY}/Logs/Process-${proc.pid}.txt`);
 			}, DEFAULT_PROCESS_LOG_DELETE_TIMEOUT);
 		});
@@ -63,10 +61,14 @@ export default class ProcessManager {
 	}
 
 	static Restart(pid) {
-		var cmd = ProcessManager.GetProcess(pid);
-		cmd.kill();
+		const cmd = Processes[pid];
+		ProcessManager.Kill(pid);
 		delete Processes[pid];
 		return ProcessManager.Spawn(cmd.spawnargs.join(" "));
+	}
+
+	static Exists(pid) {
+		return Processes[pid] !== undefined;
 	}
 
 	static Kill(pid) {
