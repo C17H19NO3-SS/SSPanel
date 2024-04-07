@@ -34,5 +34,5 @@ This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) i
 - ProcessManagement added.
 - Extension system added.
 - Theme system added.
-- ~~Language system added.~~
+- i18n language system added.
 - ~~Maked default theme.~~
