@@ -35,4 +35,10 @@ export const DEFAULT_EXTENSIONS_DIR = "Extensions";
 
 export const DEFAULT_EXTENSIONS_ROUTING_PATH = "/ext";
 
+export const DEFAULT_THEME_FOLDER = "Themes";
+
+export const DEFAULT_THEME_NAME = "DefaultDark";
+
+export const DEFAULT_RENDER_ENGINE = "ejs";
+
 export const TOKEN = crypto.randomBytes(64).toString("hex");

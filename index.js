@@ -11,6 +11,9 @@ import {
 	DEFAULT_LOOPS_DIR,
 	DEFAULT_PORT,
 	DEFAULT_PROCESS_LOG_DIR,
+	DEFAULT_RENDER_ENGINE,
+	DEFAULT_THEME_FOLDER,
+	DEFAULT_THEME_NAME,
 	TOKEN,
 } from "./consts";
 import Login from "./Routers/Login/Login.js";
@@ -22,11 +25,16 @@ import ProcessManager, { Processes } from "./Classes/ProcessManager.js";
 import ScriptParser from "./Classes/ScriptParser.js";
 import chalk from "chalk";
 import ExtensionManager from "./Classes/ExtensionManager.js";
+import Themes from "./Routers/Theme/Themes.js";
+import variables from "./variables.js";
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 const ext = new ExtensionManager();
+
+app.set("views", `${DEFAULT_THEME_FOLDER}/${DEFAULT_THEME_NAME}`);
+app.set("view engine", DEFAULT_RENDER_ENGINE);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -36,14 +44,16 @@ app.use((req, res, next) => {
 	req.Processes = Processes;
 	req.ProcessManager = ProcessManager;
 	req.Exts = ext.extensions;
+	req.ThemeVariables = variables;
 	next();
 });
 app.use(ext.Middleware);
 app.use(Log);
 app.use(AuthController);
-app.use(Login);
-app.use(Static);
 app.use(Api);
+app.use(Login);
+app.use(Themes);
+app.use(Static);
 
 server.listen(DEFAULT_PORT, DEFAULT_HOST, (...args) => {
 	console.clear();
@@ -69,6 +79,12 @@ server.listen(DEFAULT_PORT, DEFAULT_HOST, (...args) => {
 			fs.rmSync(`${DEFAULT_PROCESS_LOG_DIR}/${val}`);
 		});
 	fs.writeFileSync(DEFAULT_LOG_FILE, "");
+	fs.readdirSync(DEFAULT_THEME_FOLDER).forEach((val) => {
+		app.use(
+			`/${val}/static`,
+			express.static(`${DEFAULT_THEME_FOLDER}/${val}/Static`),
+		);
+	});
 });
 
 fs.readdirSync(DEFAULT_LOOPS_DIR).forEach((val) => {
