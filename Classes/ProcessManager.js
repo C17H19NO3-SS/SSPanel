@@ -1,8 +1,8 @@
-import cp from "child_process";
+import cp from "node:child_process";
 import fs from "fs";
 import {
 	DEFAULT_PROCESS_LOG_DELETE_TIMEOUT,
-	DEFAULT_PROCESS_USER,
+	DEFAULT_PROCESS_LOG_DIR,
 	PROJECT_DIRECTORY,
 } from "../consts";
 
@@ -10,12 +10,9 @@ export const Processes = {};
 
 export default class ProcessManager {
 	static Spawn(command = "") {
-		const id = Math.floor(Math.random() * 10000 * Math.random());
 		var cmd = command.split(" ");
 		const proc = cp.spawn(cmd.shift(), cmd, {
 			stdio: ["pipe", "pipe", "pipe"],
-			uid: DEFAULT_PROCESS_USER,
-			gid: DEFAULT_PROCESS_USER,
 			shell: "/bin/bash",
 		});
 
@@ -41,7 +38,6 @@ export default class ProcessManager {
 					`ERROR: ${data.toString()}\n`,
 				);
 			} catch (err) {
-				console.error(err);
 				fs.writeFileSync(
 					`${PROJECT_DIRECTORY}/Logs/Process-${proc.pid}.txt`,
 					`ERROR: ${data.toString()}\n`,
@@ -49,7 +45,7 @@ export default class ProcessManager {
 			}
 		});
 
-		proc.on("exit", () => {
+		proc.on("exit", (statusCode) => {
 			delete Processes[proc.pid];
 			setTimeout(() => {
 				fs.rmSync(`${PROJECT_DIRECTORY}/Logs/Process-${proc.pid}.txt`);
@@ -81,6 +77,11 @@ export default class ProcessManager {
 	}
 
 	static GetProcesses() {
-		return Processes;
+	    var obj = {};
+	    for(const [key, value] of Object.entries(Processes)) {
+	        obj[key] = {};
+	        obj[key].log = fs.existsSync(`${DEFAULT_PROCESS_LOG_DIR}/Process-${value?.pid}.txt`) ? fs.readFileSync(`${DEFAULT_PROCESS_LOG_DIR}/Process-${value?.pid}.txt`) : "";
+	    }
+		return obj;
 	}
 }

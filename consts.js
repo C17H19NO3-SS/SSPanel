@@ -25,9 +25,11 @@ export const DEFAULT_OVERWRITE = true;
 
 export const DEFAULT_PASSWORD = "{login:'success',}";
 
-export const DEFAULT_PROCESS_LOG_DIR = "Logs";
+export const DEFAULT_PROCESS_LOG_DIR = `${PROJECT_DIRECTORY}Logs`;
 
 export const DEFAULT_PROCESS_USER = 1000;
+
+export const DEFAULT_PROCESS_GROUP = 1000;
 
 export const DEFAULT_PROCESS_LOG_DELETE_TIMEOUT = 1000 * 60 * 60 * 24 * 3; // 3 day
 

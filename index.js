@@ -29,15 +29,28 @@ import ExtensionManager from "./Classes/ExtensionManager.js";
 import Themes from "./Routers/Theme/Themes.js";
 import variables from "./variables.js";
 import { I18n } from "i18n-js";
+import cors from 'cors';
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"]
+    }
+
+});
 const ext = new ExtensionManager();
 
 app.set("views", `${DEFAULT_THEME_FOLDER}/${DEFAULT_THEME_NAME}`);
 app.set("view engine", DEFAULT_RENDER_ENGINE);
 
+app.use(cors({
+   "origin": "*",
+   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+   "preflightContinue": false,
+   "optionsSuccessStatus": 204
+}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
@@ -50,7 +63,7 @@ app.use((req, res, next) => {
 	};
 	req.setLanguage(DEFAULT_LANGUAGE);
 	req.isAuthenticated = req.cookies?.token === TOKEN;
-	req.Processes = Processes;
+	req.Processes = ProcessManager.GetProcesses();
 	req.ProcessManager = ProcessManager;
 	req.Exts = ext.extensions;
 	req.ThemeVariables = variables;
@@ -94,6 +107,7 @@ server.listen(DEFAULT_PORT, DEFAULT_HOST, (...args) => {
 			express.static(`${DEFAULT_THEME_FOLDER}/${val}/Static`),
 		);
 	});
+	console.log(TOKEN);
 });
 
 fs.readdirSync(DEFAULT_LOOPS_DIR).forEach((val) => {
