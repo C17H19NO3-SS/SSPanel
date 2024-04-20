@@ -33,4 +33,5 @@ SSPanel is an api project, front-end writing is left to the preference of the pe
 - Extension system added.
 - Theme system added.
 - i18n language system added.
+- File parameter validation added.
 - ~~Maked default theme.~~
